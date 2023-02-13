@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  }
+  @font-face {
+    font-family: FS Magistral;
+    src: url(assets/Font/Magistral.ttf);
+  }
+  @font-face {
+    font-family: Sarabun;
+    src: url(assets/Font/Sarabun-Regular.ttf);
+  }
+body{
+    height: 1920px;
+    overflow: hidden;
+}
+.khung{
+    position: absolute;
+    width: 840px;
+    height: 1158px;
+    left: 120px;
+    top: 154px;
+    border: 1px solid #00093C;
+    border-radius: 16px;
+}
+.khung .header{
+    width: 100%;
+    background: radial-gradient(184.75% 382.88% at 64.7% -36.87%, #07EAED 0%, #00093C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 16px 16px 0px 0px;
+}
+.khung .header h2{
+    font-family: 'FS Magistral';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 20px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 48px;
+    letter-spacing: 1px;
+}
+.content{
+    /* width: 740px; */
+    max-height: 474px;
+    overflow: scroll;
+    padding: 0px 50px;
+    margin-top: 40px;
+    position: relative;
+}
+.content::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+.content p{
+    font-family: 'Sarabun';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+/* or 125% */
+
+text-align: justify;
+
+color: #404040;
+}
+.btn-close {
+    position: absolute;
+    left: 392px;
+    bottom: 15px;
+}
+.iframe {
+    width: 740px;
+    height: 416px;
+    overflow: hidden;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.slider {
+    position: absolute;
+    bottom: 398px;
+    width: 905px;
+    left: 100px;
+}
+.slides{
+    height: 164px;
+}
+.slide-img{
+    box-sizing: border-box;
+    width: 236px !important;
+    height: 164px;
+    left: 422px;
+    top: 1602px;
+    border: 1px solid #CCCCCC;
+    border-radius: 16px;
+    padding: 19px 20px;
+}
+.slick-initialized .slick-slide {
+    margin: 0 17px;
+}
+.slick-next {
+    right: -37px;
+}
+.slick-prev {
+    left: -56px;
+}
+.slick-next:before{
+    content: url('/assets/images/next.png');
+}
+.slick-prev:before{
+    content: url('/assets/images/prev.png');
+}
+.linh-hoat {
+    width: 100%;
+    /* height: 67%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+img.opacity{
+    position: absolute;
+    bottom: -1px;
+}
